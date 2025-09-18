@@ -4,4 +4,7 @@ services:
     container_name: custom-nginx
     ports:
       - "80:80"
+    volumes:
+      - ./nginx-data:/var/opt/nginx
     restart: always
+    
